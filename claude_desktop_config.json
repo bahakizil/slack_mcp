@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "slack-ai-assistant": {
+      "command": "python",
+      "args": ["/full/path/to/main.py"],
+      "env": {
+        "SLACK_BOT_TOKEN": "xoxb-your-actual-bot-token-here",
+        "SLACK_APP_TOKEN": "xapp-your-actual-app-token-here",
+        "OPENAI_API_KEY": "sk-your-actual-openai-api-key-here",
+        "TAVILY_API_KEY": "tvly-your-actual-tavily-api-key-here",
+        "PORT": "8003"
+      }
+    }
+  }
+}

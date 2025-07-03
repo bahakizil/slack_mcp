@@ -1,0 +1,10 @@
+fastmcp==2.8.0
+slack-sdk==3.35.0
+python-dotenv>=1.0.1
+httpx==0.28.1
+boto3==1.35.82
+cryptography==43.0.3
+openai==1.66.3
+requests==2.32.3
+tavily-python>=0.3.0
+mcp>=1.0.0
