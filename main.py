@@ -906,53 +906,28 @@ Provide helpful, concise, and professional responses. For web research requests,
     def start_socket_mode(self) -> None:
         """Initialize and start Socket Mode for real-time event processing."""
         if not self.socket_client:
-            print("Socket Mode not available - missing configuration")
             return
 
         try:
             def run_socket_client():
                 if self.socket_client:
-                    print("Connecting to Slack Socket Mode...")
                     self.socket_client.connect()
-                    print("Socket Mode connected successfully")
 
             socket_thread = threading.Thread(target=run_socket_client, daemon=True)
             socket_thread.start()
             time.sleep(2)  # Allow connection to establish
             
         except Exception as e:
-            print(f"Socket Mode startup error: {e}")
+            pass
 
     def run(self) -> None:
         """Start the MCP server with all integrated capabilities."""
-        print("🚀 Slack MCP Server - Professional AI Assistant")
-        print("=" * 60)
-        print(f"🌐 MCP Server: http://{os.getenv('HOST', '0.0.0.0')}:{os.getenv('PORT', '8003')}")
-        print(f"🔧 Registered Tools: {len([name for name in dir(self.mcp) if not name.startswith('_')])}")
-        
         # Initialize Socket Mode
         if self.socket_client:
-            print("⚡ Socket Mode: Enabled (Real-time responses)")
             self.start_socket_mode()
-            print(f"✅ Bot ready for mentions: @{self.bot_user_id or 'MCP Bot'}")
-        else:
-            print("📱 Socket Mode: Disabled (MCP tools only)")
-            
-        print("=" * 60)
-        print("🎯 Available Services:")
-        print("  • Real-time Slack event handling")
-        print("  • MCP tool integration for Claude Desktop")
-        print("  • Web search and news research")
-        print("  • AI-powered query processing")
-        print("  • Autonomous task execution")
-        print("=" * 60)
 
-        # Start MCP server
-        self.mcp.run(
-            transport="streamable-http",
-            host=os.getenv("HOST", "0.0.0.0"),
-            port=int(os.getenv("PORT", "8003")),
-        )
+        # Start MCP server with stdio transport for Claude Desktop
+        self.mcp.run()
 
 
 def main() -> None:
