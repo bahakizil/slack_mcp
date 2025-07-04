@@ -218,9 +218,6 @@ Compare discussions across #design, #engineering, and #marketing channels this w
 
 
 
-![diagram](https://github.com/user-attachments/assets/ec1584c6-a194-4414-8861-d8cc86d74e35)
-
-
 
 
 
@@ -232,6 +229,14 @@ Compare discussions across #design, #engineering, and #marketing channels this w
 docker build -t slack-mcp-server .
 docker run -p 8003:8003 --env-file .env slack-mcp-server
 ```
+
+
+![diagram](https://github.com/user-attachments/assets/ec1584c6-a194-4414-8861-d8cc86d74e35)
+
+
+
+
+
 
 ### 🚀 AWS ECS Deployment (Production)
 ```bash
