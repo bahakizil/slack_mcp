@@ -20,7 +20,12 @@ A production-ready **Slack MCP Server** that combines real-time Socket Mode inte
 
 ## 🎥 Demo
 
-```
+![claude_text](https://github.com/user-attachments/assets/dd1b6b01-5bda-46df-9f7d-05a19be6109f)
+
+![slack_chat](https://github.com/user-attachments/assets/afc357c5-6a22-4499-bad7-5700e3f0be05)
+
+![diagram](https://github.com/user-attachments/assets/ec1584c6-a194-4414-8861-d8cc86d74e35)
+
 @MCP Bot analyze yesterday's #product-meeting and research mentioned technologies
 ```
 ↓ *2 seconds later* ↓
