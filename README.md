@@ -22,9 +22,8 @@ A production-ready **Slack MCP Server** that combines real-time Socket Mode inte
 
 ![claude_text](https://github.com/user-attachments/assets/dd1b6b01-5bda-46df-9f7d-05a19be6109f)
 
-![slack_chat](https://github.com/user-attachments/assets/afc357c5-6a22-4499-bad7-5700e3f0be05)
+![slackchat](https://github.com/user-attachments/assets/2a9599e5-430c-434f-a1b3-4da4bcbcb244)
 
-![diagram](https://github.com/user-attachments/assets/ec1584c6-a194-4414-8861-d8cc86d74e35)
 
 @MCP Bot analyze yesterday's #product-meeting and research mentioned technologies
 ```
@@ -213,6 +212,17 @@ Compare discussions across #design, #engineering, and #marketing channels this w
 │               │ (gpt-4.1-nano)  │                          │
 │               └─────────────────┘                          │
 └─────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+![diagram](https://github.com/user-attachments/assets/ec1584c6-a194-4414-8861-d8cc86d74e35)
+
+
+
+
 
 ## ☁️ Production Deployment
 
