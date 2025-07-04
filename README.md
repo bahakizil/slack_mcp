@@ -179,33 +179,35 @@ Compare discussions across #design, #engineering, and #marketing channels this w
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    UNIFIED SLACK MCP SERVER                 │
-│                     (main.py - Port 8003)                   │
+│                   AUTONOMOUS AI SYSTEM                      │
 ├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  ┌─────────────────┐    ┌─────────────────┐               │
-│  │  SOCKET MODE    │    │   MCP TOOLS     │               │
-│  │  Real-time Bot  │    │   18+ tools     │               │
-│  │                 │    │                 │               │
-│  │ • Event-driven  │    │ • Slack tools   │               │
-│  │ • Auto-response │    │ • AI tools      │               │
-│  │ • Zero polling  │    │ • Web search    │               │
-│  │ • Rate-limit    │    │ • Management    │               │
-│  │   free          │    │   tools         │               │
-│  └─────────────────┘    └─────────────────┘               │
+│  ┌─────────────────┐    ┌─────────────────┐                │
+│  │  SLACK MCP      │    │  TAVILY MCP     │                │
+│  │  SERVER         │    │  SERVER         │                │
+│  │  Port: 8001     │    │  Port: 8002     │                │
+│  │                 │    │                 │                │
+│  │ • Slack Tools   │    │ • Web Search    │                │
+│  │ • AI Tools      │    │ • News Search   │                │
+│  │ • Orchestration │    │ • Research      │                │
+│  └─────────────────┘    └─────────────────┘                │
 │           │                       │                        │
-│           └───────────┬───────────┘                        │
-│                      │                                    │
-│            ┌─────────────────┐                            │
-│            │  AI ENGINE      │                            │
-│            │                 │                            │
-│            │ • GPT-4o-mini   │                            │
-│            │ • Tavily Web    │                            │
-│            │ • Autonomous    │                            │
-│            │   Agent         │                            │
-│            └─────────────────┘                            │
+│           └───────────┐   ┌───────┘                        │
+│                      │   │                               │
+│               ┌─────────────────┐                          │
+│               │ AUTONOMOUS      │                          │
+│               │ AGENT           │                          │
+│               │                 │                          │
+│               │ • Tool Discovery│                          │
+│               │ • Plan Creation │                          │
+│               │ • Execution     │                          │
+│               │ • Synthesis     │                          │
+│               └─────────────────┘                          │
+│                       │                                    │
+│               ┌─────────────────┐                          │
+│               │ OPENAI GPT      │                          │
+│               │ (gpt-4.1-nano)  │                          │
+│               └─────────────────┘                          │
 └─────────────────────────────────────────────────────────────┘
-```
 
 ## ☁️ Production Deployment
 
